@@ -1,0 +1,89 @@
+{
+	"ABI version": 2,
+	"version": "2.2",
+	"header": ["time"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "onWalletDeployed",
+			"inputs": [
+				{"name":"tokenWallet","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "onAcceptTokensMint",
+			"inputs": [
+				{"name":"value0","type":"address"},
+				{"name":"amount","type":"uint128"},
+				{"name":"remainingGasTo","type":"address"},
+				{"name":"value3","type":"cell"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "onAcceptTokensTransfer",
+			"inputs": [
+				{"name":"value0","type":"address"},
+				{"name":"amount","type":"uint128"},
+				{"name":"sender","type":"address"},
+				{"name":"value3","type":"address"},
+				{"name":"remainingGasTo","type":"address"},
+				{"name":"payload","type":"cell"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "withdraw",
+			"inputs": [
+				{"name":"to","type":"address"},
+				{"name":"amount","type":"uint128"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "maxBet",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint128"}
+			]
+		}
+	],
+	"data": [
+		{"key":1,"name":"tokenRoot_","type":"address"},
+		{"key":2,"name":"owner_","type":"address"}
+	],
+	"events": [
+		{
+			"name": "Game",
+			"inputs": [
+				{"name":"player","type":"address"},
+				{"name":"bet","type":"uint8"},
+				{"name":"result","type":"uint8"},
+				{"name":"prize","type":"uint128"}
+			],
+			"outputs": [
+			]
+		}
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"tokenRoot_","type":"address"},
+		{"name":"owner_","type":"address"},
+		{"name":"tokenWallet_","type":"address"},
+		{"name":"tokenBalance_","type":"uint128"}
+	]
+}

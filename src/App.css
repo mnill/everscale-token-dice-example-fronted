@@ -1,0 +1,127 @@
+html, body, #root {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.App-fullscreen {
+    width: 100%;
+    height: 100%;
+}
+
+.App-center-vertical-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+}
+
+.header span {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.button {
+    display: inline-block;
+    font-weight: 600;
+    background-color: #00d1b2;
+    border-color: #dbdbdb;
+    border-width: 1px;
+    color: white;
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.title {
+    min-width: 320px;
+    text-align: center;
+    display: block;
+    margin: 0;
+}
+
+.main-game {
+    display: flex;
+    min-height: calc(100% - 70px);
+    min-width: 100%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-game .tokens-info {
+    min-width: 320px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-game .tokens-info .group{
+}
+
+
+.main-game .tokens-info .label {
+    display: block;
+}
+
+.main-game .tokens-info .value {
+    padding-bottom: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+.message-placeholder {
+    min-height: 32px;
+    font-weight: bold;
+    font-size: 1.2em;
+    max-width: 300px;
+    margin: auto;
+}
+
+.input-group {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.input-group .number {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0px 3px;
+    border-radius: 3px;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-group .number.selected {
+    background-color: blue;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    display: inline-block;
+    line-height: 1em;
+    text-align: center;
+}
+
